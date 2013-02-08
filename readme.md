@@ -10,7 +10,6 @@ This is a ruby version of [Stellar-Tweetbot](https://github.com/mikeindustries/S
 6. Rename the `config.yml.example` to `config.yml` and edit the variables. 
 7. Commit, and create a new [Heroku Ceddar application](https://devcenter.heroku.com/articles/ruby#deploy_to_herokucedar). 
 8. Run `bundle install` and Push to Heroku. 
-9. Add the Redis To Go Addon by running `heroku addons:add redistogo:nano` or by visiting the [addon page](https://addons.heroku.com/redistogo).
-10. Add the Heroku Scheduler Addon by running `heroku addons:add scheduler:standard` or by visiting the [addon page](https://addons.heroku.com/scheduler).
-11. Add the job `ruby stellar2twitter.rb` to the [Heroku Scheduler](https://heroku-scheduler.herokuapp.com/dashboard)
-12. Done!
+9. Add the Heroku Scheduler Addon by running `heroku addons:add scheduler:standard` or by visiting the [addon page](https://addons.heroku.com/scheduler).
+10. Add the job `ruby stellar2twitter.rb` to the [Heroku Scheduler](https://heroku-scheduler.herokuapp.com/dashboard)
+11. Done!
