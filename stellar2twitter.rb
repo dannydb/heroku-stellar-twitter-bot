@@ -3,15 +3,14 @@ require 'rss/atom'
 require 'twitter'
 require 'oembed'
 
-config = YAML.load(open("config.yml"))
 Twitter.configure do |c|
-  c.consumer_key = config["CONSUMER_KEY"]
-  c.consumer_secret = config["CONSUMER_SECRET"]
-  c.oauth_token = config["OAUTH_TOKEN"]
-  c.oauth_token_secret = config["OAUTH_TOKEN_SECRET"]
+  c.consumer_key = ENV["CONSUMER_KEY"]
+  c.consumer_secret = ENV["CONSUMER_SECRET"]
+  c.oauth_token = ENV["OAUTH_TOKEN"]
+  c.oauth_token_secret = ENV["OAUTH_TOKEN_SECRET"]
 end
 
-feed_url = "http://stellar.io/#{config["USERNAME"]}/flow/feed"
+feed_url = "http://stellar.io/#{ENV["USERNAME"]}/flow/feed"
 
 OEmbed::Providers.register_all
 client = Twitter::Client.new
