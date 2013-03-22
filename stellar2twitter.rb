@@ -1,5 +1,5 @@
 require 'open-uri'
-require 'rss/atom'
+require 'json'
 require 'twitter'
 require 'oembed'
 
