@@ -9,7 +9,7 @@ This is a ruby version of [Stellar-Tweetbot](https://github.com/mikeindustries/S
 5. Click back to the "Details" tab and click the "Create My Access Token" button.
 6. Commit, and create a new [Heroku Ceddar application](https://devcenter.heroku.com/articles/ruby#deploy_to_herokucedar). 
 7. Run `bundle install` and Push to Heroku. 
-8.Set Heroku environment variables:
+8. Set Heroku environment variables:
 ```
 heroku config:add CONSUMER_KEY=__CONSUMER_KEY__ 
 heroku config:add CONSUMER_SECRET=__CONSUMER_SECRET__ 
