@@ -11,10 +11,10 @@ This is a ruby version of [Stellar-Tweetbot](https://github.com/mikeindustries/S
 7. Run `bundle install` and Push to Heroku. 
 8. Set Heroku environment variables:
 ```
-heroku config:add CONSUMER_KEY=__CONSUMER_KEY__ 
-heroku config:add CONSUMER_SECRET=__CONSUMER_SECRET__ 
-heroku config:add OAUTH_TOKEN=__OAUTH_TOKEN__ 
-heroku config:add OAUTH_TOKEN_SECRET=__OAUTH_TOKEN_SECRET__ 
+heroku config:add CONSUMER_KEY=__CONSUMER_KEY__ \n
+heroku config:add CONSUMER_SECRET=__CONSUMER_SECRET__ \n
+heroku config:add OAUTH_TOKEN=__OAUTH_TOKEN__ \n
+heroku config:add OAUTH_TOKEN_SECRET=__OAUTH_TOKEN_SECRET__ \n
 heroku config:add USERNAME=__STELLAR_USERNAME__ 
 ```
 9. Add the Heroku Scheduler Addon by running `heroku addons:add scheduler:standard` or by visiting the [addon page](https://addons.heroku.com/scheduler).
