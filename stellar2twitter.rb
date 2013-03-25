@@ -19,15 +19,11 @@ feed = JSON.parse(open(feed_url).read)
 feed['items'].each do |item|
   url = item['item_url']
   favecount = item['favedby_entities'].length
-  next if favecount < 3
+  next if favecount < 2
 
   begin
     if url.match(/twitter.com\/.*\/status\/(.*)$/)
       client.retweet($1)
-    # else
-    #   info = OEmbed::Providers.get(url)
-    #   url = info.web_page_short_url unless info.provider_name != "Flickr"
-    #   client.update("#{info.author_name}: #{url}")
     end
   rescue Exception => e
     puts "Oh well: #{e}"
