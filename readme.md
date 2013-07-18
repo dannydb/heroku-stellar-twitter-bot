@@ -18,7 +18,7 @@ heroku config:add OAUTH_TOKEN=__OAUTH_TOKEN__
 heroku config:add OAUTH_TOKEN_SECRET=__OAUTH_TOKEN_SECRET__
 heroku config:add USERNAME=__STELLAR_USERNAME__
 ```
-    
+
 9. Add the Heroku Scheduler Addon by running `heroku addons:add scheduler:standard` or by visiting the [addon page](https://addons.heroku.com/scheduler).
 10. Add the job `ruby stellar2twitter.rb` to the [Heroku Scheduler](https://heroku-scheduler.herokuapp.com/dashboard)
 11. Done!
